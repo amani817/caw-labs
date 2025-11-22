@@ -1,0 +1,28 @@
+.click-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #eaeef1; 
+    font-family: Arial, sans-serif;
+}
+.click-me button {
+    padding: 15px 30px; 
+    font-size: 1.5rem; 
+    border: none;
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    margin-bottom: 20px; 
+}
+
+.click-me button:hover {
+    background-color: #0056b3; 
+}
+
+.click-me p {
+    font-size: 2rem; 
+    color: #333; 
+    margin-top: 10px; 
+}

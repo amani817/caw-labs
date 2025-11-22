@@ -1,0 +1,54 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+}
+
+h2 {
+    color: #333; 
+    margin-bottom: 15px; 
+}
+
+.app button {
+    padding: 12px 25px; 
+    font-size: 1rem;
+    border: none; 
+    border-radius: 5px; 
+    background-color: #007bff; 
+    color: white; 
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.app button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.app input {
+    padding: 10px; 
+    margin: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    width: 250px; 
+}
+
+.app ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.app li {
+    padding: 10px; 
+    margin: 5px 0; 
+    background-color: #e7f1ff; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.app li:hover {
+    background-color: #cfe2ff; 
+}
