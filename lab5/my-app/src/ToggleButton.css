@@ -1,28 +1,112 @@
 .toggle-button {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    background-color: #eaeef1; 
-    font-family: Arial, sans-serif; 
+    min-height: 320px;
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    font-family: 'Inter', system-ui, sans-serif;
+    border-radius: 24px;
+    padding: 3rem 2rem;
+    box-shadow: 
+        0 20px 50px rgba(0,0,0,0.1),
+        0 8px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+    position: relative;
+    transition: background 0.5s ease; /* + fluide */
 }
+
+/* Effet de fond animé */
+.toggle-button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.toggle-button.active::before {
+    opacity: 1;
+}
+
+/* BOUTON MODERNE */
 .toggle-button button {
-    padding: 15px 30px; 
-    font-size: 1.5rem; 
+    position: relative;
+    padding: 1.1rem 3.2rem;
+    font-size: 1.2rem; /* corrigé – une seule valeur */
+    font-weight: 700;
+    letter-spacing: 0.5px;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff; 
-    color: white; 
-    cursor: pointer; 
-    transition: background-color 0.3s;
-    margin-bottom: 20px; 
+    border-radius: 50px;
+    background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 
+        0 10px 30px rgba(124, 58, 237, 0.4),
+        0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.toggle-button button::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.7s;
+}
+
+.toggle-button button:hover::before {
+    left: 100%;
 }
 
 .toggle-button button:hover {
-    background-color: #0056b3; 
-   
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 
+        0 20px 50px rgba(124, 58, 237, 0.5),
+        0 8px 25px rgba(0,0,0,0.25);
+    background: linear-gradient(135deg, #9333ea 0%, #6b21d4 100%);
 }
+
+.toggle-button button:active {
+    transform: translateY(-3px) scale(1.02);
+}
+
+/* TEXTE */
 .toggle-button p {
-    font-size: 2rem; 
-    color: #333;
-    margin-top: 10px; 
+    margin-top: 2.5rem;
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #7c3aed, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    letter-spacing: -1px;
+}
+
+.toggle-button.active p {
+    transform: scale(1.15);
+    opacity: 1;
+    filter: drop-shadow(0 4px 15px rgba(124,58,237,0.4));
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+    .toggle-button {
+        background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+    }
+    .toggle-button p {
+        background: linear-gradient(135deg, #c084fc, #60a5fa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
