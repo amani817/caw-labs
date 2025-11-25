@@ -28,7 +28,9 @@ function App() {
             <p>{message}</p>
             <Counter />
             <h2>Exercice 2</h2>
+            <h5>Tableau 1:</h5>
             <DisplayTab initialTab={tab1} />
+            <h5>Tableau 2:</h5>
             <DisplayTab initialTab={tab2} />
             <h2>Exercice 3</h2>
             <AuthForm />
