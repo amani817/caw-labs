@@ -7,12 +7,21 @@ import styles from './styles/Global.module.css';
 function App() {
   return (
     <div className={styles.app}>
-      
+      <section id="home">
+        <Home />
+      </section>
 
-      <section id="home"><Home /></section>
-      <section id="projects"><Projects /></section>
-      <section id="skills"><Skills /></section>
-      <section id="contact"><Contact /></section>
+      <section id="projects">
+        <Projects />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 }

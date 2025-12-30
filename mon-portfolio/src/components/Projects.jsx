@@ -1,76 +1,68 @@
 import ProjectCard from './ProjectCard';
 import styles from '../styles/Projects.module.css';
-
 const projects = [
   {
     id: 1,
-    title: "Kanban Board – Lab 3",
-    description:
-      "Application Kanban permettant la gestion des tâches avec drag & drop entre les colonnes To Do, In Progress et Done.",
-    tech: ["React", "Vite", "React DnD"],
-    github: "https://github.com/meissem-riabi/lab-kanban",
+    title: "Lab1",
+    description: "Implémentation simple d'une page HTML pour découvrir les bases du web.",
+    tech: ["HTML"],
+    github: "https://github.com/amani817/caw-labs/tree/lab2-setup/Lab1",
     demo: ""
-  },
+  }
+,
   {
     id: 2,
-    title: "Kanban Board – Lab 4",
-    description:
-      "Amélioration du tableau Kanban avec une meilleure gestion d’état et une interface plus fluide.",
-    tech: ["React", "Vite", "React DnD"],
-    github: "https://github.com/meissem-riabi/lab-kanban",
+    title: "Lab Node.js",
+    description: "Développement d'une application backend avec Node.js pour gérer des requêtes HTTP.",
+    tech: ["Node.js"],
+    github: "https://github.com/amani817/caw-labs/tree/lab2-setup/lab-node",
     demo: ""
   },
   {
     id: 3,
-    title: "Kanban Board – Lab 5",
-    description:
-      "Version avancée du Kanban Board avec logique optimisée et composants réutilisables.",
-    tech: ["React", "Vite", "React DnD"],
-    github: "https://github.com/meissem-riabi/lab-kanban",
+    title: "Lab4",
+    description: "Amélioration de la couverture de tests avec Jest pour assurer la qualité du code.",
+    tech: ["Jest"],
+    github: "https://github.com/amani817/Lab4_Jest",
     demo: ""
   },
   {
     id: 4,
-    title: "Kanban Board – Lab 6",
-    description:
-      "Application Kanban complète avec architecture claire et séparation des responsabilités.",
-    tech: ["React", "Vite", "React DnD"],
-    github: "https://github.com/meissem-riabi/kanban-board",
+    title: "Lab 5",
+    description: "Version avancée d'une application React, intégrant des fonctionnalités et un design moderne.",
+    tech: ["React"],
+    github: "https://github.com/amani817/caw-labs/tree/lab2-setup/lab5/my-app",
     demo: ""
   },
   {
     id: 5,
-    title: "Weather App",
-    description:
-      "Application météo affichant les conditions climatiques en temps réel à partir d’une API externe.",
-    tech: ["React", "Vite", "Axios", "Weather API"],
-    github: "https://github.com/meissem-riabi/lab-weather",
-    demo: "https://weather-meissem.netlify.app"
+    title: "Kanban Board – Lab 6",
+    description: "Application Kanban complète avec une architecture claire, permettant de gérer des tâches efficacement.",
+    tech: ["React", "Vite", "React DnD"],
+    github: "https://github.com/amani817/caw-labs/tree/lab2-setup/lab6",
+    demo: ""
   },
   {
     id: 6,
-    title: "PMS – Hotel Management",
-    description:
-      "Système de gestion hôtelière (PMS) pour organiser les réservations et les services.",
+    title: "PMS – Gestion Hôtelière",
+    description: "Système complet de gestion hôtelière, facilitant l'organisation des réservations et des services.",
     tech: ["Node.js", "Express.js"],
-    github: "https://github.com/meissem-riabi",
+    github: "https://github.com/amani817",
     demo: ""
   },
   {
     id: 7,
-    title: "Restaurant App",
-    description:
-      "Application de gestion de restaurant couvrant les menus, commandes et organisation dans différentes wilayas d’Algérie.",
+    title: "Application Restaurant",
+    description: "Application de gestion pour restaurants, incluant la gestion des menus et des commandes dans différentes régions d'Algérie.",
     tech: ["Flutter", "Dart"],
     github: "https://github.com/khatitaha/dam",
     demo: ""
   },
   {
     id: 8,
-    title: "Cars Website",
-    description:
-      "Site vitrine moderne dédié à la présentation de voitures avec une interface élégante et responsive.",
-    tech: ["React", "Vite"],
+    title: "Site Voitures",
+    description: "Site vitrine moderne pour présenter des voitures, avec une interface élégante et responsive.",
+    tech: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/amani817",
     demo: ""
   }
@@ -80,7 +72,7 @@ const Projects = () => {
   return (
     <section className={styles.projects} id="projects">
       <div className={styles.header}>
-        <h1>Projects</h1>
+        <h1>Projets</h1>
         <p className={styles.subtitle}>
           Une sélection de mes projets et labs réalisés durant le semestre
         </p>

@@ -12,7 +12,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://formspree.io/f/ton-endpoint', { 
+      const response = await fetch('https://formspree.io/f/mjgvddkk', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -36,7 +36,7 @@ const Contact = () => {
       </div>
 
       <div className={styles.info}>
-        <p>Email: <a href="mailto:amaniamare25@gmail.com">amaniamare25@gmail.com</a></p>
+        <p>Email: <a href="mailto:amanisoualmia@gmail.com">amani-soualmia@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/amani-soualmia" target="_blank" rel="noopener noreferrer">Mon Profil</a></p>
       </div>
 

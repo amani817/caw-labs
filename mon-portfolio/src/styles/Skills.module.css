@@ -2,6 +2,11 @@
   padding: 6rem 8%;
   background: #020617;
   color: #e5e7eb;
+  width: 104vw;
+  max-width: none;
+ 
+  position: relative;
+  box-sizing: border-box;
 }
 
 .header {

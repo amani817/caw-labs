@@ -1,17 +1,21 @@
 .projects {
-  padding: 6rem 8%;
-  background: linear-gradient(180deg, #0f172a, #020617);
+  padding: 6rem 10%;
+ background:  #020617;
   color: #e5e7eb;
+  width: 104vw;
+  max-width: none;
+
+  position: relative;
+  box-sizing: border-box;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem; /* Réduit l'espace en bas du titre */
 }
 
 .header h1 {
-  font-size: 2.8rem;
-  font-weight: 700;
+  font-size: 3rem;
   background: linear-gradient(90deg, #38bdf8, #6366f1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -19,12 +23,20 @@
 
 .subtitle {
   margin-top: 1rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #9ca3af;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5rem; /* Réduit l'espace entre les cartes */
+}
+
+.projectCard {
+  background-color: #2c2c2c; 
+  border-radius: 8px; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
 }
